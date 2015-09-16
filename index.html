@@ -10,11 +10,14 @@
     <person-match-info person="matchingPerson"></person-match-info>
    
     <div ng-repeat="hero in matchingHeroes">
-        <strong>{{hero.name}}</strong>
-        <div>Color: {{hero.favoriteColor}}</div>
-        <div>Spandex &lt;3: {{hero.spandexScore}}</div>
-        <div>Capes: {{hero.capes}}</div>
-        <div>Braveness: {{hero.braveness}}</div>
+        <div expand-directive>
+            <strong >{{hero.name}}</strong>
+            <div>Color: {{hero.favoriteColor}}</div>
+            <div>Spandex &lt;3: {{hero.spandexScore}}</div>
+            <div>Capes: {{hero.capes}}</div>
+            <div>Braveness: {{hero.braveness}}</div>
+
+        </div>
     </div>
         
      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
@@ -23,5 +26,7 @@
      <script src="service.js"></script>
     <script src="person_info_directive.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js"> </script>
+    <script src="findMatchingService.js"></script>
+    <script src="expandDirective.js"></script>
 </body>
 </html>
